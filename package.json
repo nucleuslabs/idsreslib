@@ -11,7 +11,6 @@
     }
   ],
   "repository": "https://github.com/nucleuslabs/idsreslib",
-  "license": "MIT",
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16"
