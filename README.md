@@ -54,7 +54,7 @@ function Icons({width, height}) {
 
 ### IdsIcon Component
 
-A React Component that accepts an icon prop which is teh string name for which icon to display.
+A React Component that accepts an icon prop which is the string name for which icon to display.
 
 Usage in a React Component:
 
