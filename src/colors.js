@@ -1,0 +1,15 @@
+export default {
+  Blue: '#0000ff',
+  White: '#ffffff',
+  Red: '#ff0000',
+  Yellow: '#ffff00',
+  Green: '#00ff00',
+  Orange: '#ff9c00',
+  Brown: '#715220',
+  Pink: '#ff9af9',
+  Black: '#000000',
+  Grey: '#808080',
+  Purple: '#a259a0',
+  Gold: '#cbb732',
+  Silver: '#e1e1e1',
+};
