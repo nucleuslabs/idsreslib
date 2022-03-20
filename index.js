@@ -1,7 +1,7 @@
-// icons
 import * as icons from './src/icons';
+import colors from './src/colors';
 
-export { icons };
 export { default as IdsIcon } from './src/IdsIcon';
-// colors
-export { default as colors } from './src/colors';
+export { icons };
+export { colors };
+export { localizedIcons, localizedColors } from './src/localized';

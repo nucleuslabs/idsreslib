@@ -66,6 +66,42 @@ export default function AardvarkIcon({width, height}) {
 }
 ~~~
 
+### localizedColors(lang)
+
+A function that you pass a language string then it returns a 2 dimensional array of colors with localized names.
+
+~~~
+[["Blue", "#0000FF", "Blue"]]
+~~~ 
+
+Usage:
+
+~~~
+import {localizedColors} from 'idsreslib';
+
+function ColorTable() {
+    return localizedColors('fr').map(([colorKey, color, colorName]) => <span style={{margin: 10, padding: 20,width: "120px", height: "120px", backgroundColor: color, color: colorKey === "Black" ? "white" : "black", border: "solid 1px black"}}>
+        {colorName}
+    </span>);
+}
+~~~
+
+### localizedIcons(lang)
+
+A function that you pass a language string then it returns a 2 dimensional array of icons with localized names.
+
+Usage:
+
+~~~
+import {localizedIcons} from 'idsreslib';
+
+function Icons({width, height}) {
+    return <div>
+        {localizedIcons(en).map(([iconKey, Icon, iconName]) => <Icon key={iconKey} width={width} height={height}/> - {iconName})}
+    </div>
+}
+~~~
+
 ## Full create-react-app Demo Code
 
 Open up a terminal and run the following to test this out using create-react-app:
