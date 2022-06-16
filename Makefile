@@ -25,7 +25,7 @@ node_modules:
 publish: test
 	cp package.json dist/package.json && cp README.md dist/README.md
 	yarn version
-	yarn publish dist --tag latest
+	yarn publish dist --tag smrt1
 
 lint: $(SRC_FILES) yarn.lock
 	yarn run lint
