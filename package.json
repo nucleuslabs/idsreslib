@@ -1,6 +1,6 @@
 {
   "name": "idsreslib",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "IDS Resource Library",
   "main": "index.js",
   "contributors": [
