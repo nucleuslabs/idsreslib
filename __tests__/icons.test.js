@@ -3,22 +3,33 @@ import { render, cleanup } from '@testing-library/react';
 
 const {
     Aardvark,
+    Acorn,
     Albatross,
     Alligator,
     Ant,
     Antelope,
     Armadillo,
+    BagSeedling,
     Bat,
     Bear,
     Beaver,
     Bee,
+    BenchTree,
+    Binoculars,
     Boar,
     Buffalo,
+    Bug,
+    Bugs,
     Bull,
     Butterfly,
+    Cactus,
     Camel,
+    Cannabis,
     Cardinal,
     Cat,
+    Chestnut,
+    CloudSun,
+    Clover,
     Cougar,
     Crow,
     Deer,
@@ -30,8 +41,15 @@ const {
     Eagle,
     Elephant,
     Elk,
+    Feather,
+    FeatherPointed,
+    Fire,
+    FireSmoke,
     Fish,
     Flamingo,
+    Flower,
+    FlowerDaffodil,
+    FlowerTulip,
     Fox,
     Frog,
     Gazelle,
@@ -42,21 +60,33 @@ const {
     Heron,
     Hippopotamus,
     Horse,
+    HouseTree,
     Hummingbird,
+    Icicles,
     Jellyfish,
     Kiwi,
     Koala,
     Ladybug,
+    Leaf,
+    LeafMaple,
+    LeafOak,
     Lion,
     Lizard,
     Llama,
     Lobster,
+    Locust,
     Loon,
     Manta,
     Monkey,
     Moose,
     Mosquito,
+    Mound,
+    Mountain,
+    MountainCity,
+    MountainSun,
+    Mountains,
     Mouse,
+    Mushroom,
     Narwhal,
     Octopus,
     Otter,
@@ -65,26 +95,53 @@ const {
     Peacock,
     Pelican,
     Penguin,
+    PersonHiking,
+    PlantWilt,
+    Pompebled,
     Porcupine,
     Pterodactyl,
     Rabbit,
     Raccoon,
+    Raindrops,
     Ram,
     Rhinoceros,
     Rooster,
     Seahorse,
     Seal,
+    Seedling,
     Shark,
     Sheep,
+    SignPost,
+    SignsPost,
     Snail,
     Snake,
     Spider,
+    SpiderBlackWidow,
+    SpiderWeb,
     Squirrel,
     Stegosaurus,
     Swan,
     Tiger,
-    Triceratops, Turkey, Turtle,
-    Tyrannosaurus, Unicorn, Vulture, Whale, Wolf, Woodpecker
+    Tree,
+    TreeDeciduous,
+    TreeLarge,
+    TreePalm,
+    Trees,
+    Triceratops,
+    Trillium,
+    Turkey,
+    Turtle,
+    Tyrannosaurus,
+    Unicorn,
+    Volcano,
+    Vulture,
+    Water,
+    Wave,
+    Whale,
+    Wind,
+    Wolf,
+    Woodpecker,
+    Worm
 } = require("../dist").icons;
 
 afterEach(cleanup);
@@ -806,6 +863,307 @@ describe('Woodpecker Icon', () => {
         const {getByTestId} = render(<button data-testid={"test-container"}>
             <Woodpecker data-testid="icon" width={50} height={50}/>
         </button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+
+describe('Fire Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Fire data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Tree Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Tree data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Binoculars Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Binoculars data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Feather Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Feather data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Bug Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Bug data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('MountainSun Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><MountainSun data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Water Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Water data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Leaf Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Leaf data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Flower Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Flower data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Seedling Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Seedling data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Wind Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Wind data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('FlowerTulip Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><FlowerTulip data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Raindrops Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Raindrops data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Worm Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Worm data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Wave Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Wave data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Volcano Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Volcano data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Trillium Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Trillium data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Trees Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Trees data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('TreePalm Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><TreePalm data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('TreeLarge Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><TreeLarge data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('TreeDeciduous Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><TreeDeciduous data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('SpiderWeb Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><SpiderWeb data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('SpiderBlackWidow Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><SpiderBlackWidow data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('SignsPost Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><SignsPost data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('SignPost Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><SignPost data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Pompebled Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Pompebled data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('PlantWilt Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><PlantWilt data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('PersonHiking Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><PersonHiking data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Mushroom Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Mushroom data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Mountains Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Mountains data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('MountainCity Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><MountainCity data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Mountain Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Mountain data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Mound Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Mound data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Locust Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Locust data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('LeafOak Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><LeafOak data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('LeafMaple Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><LeafMaple data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Icicles Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Icicles data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('HouseTree Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><HouseTree data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('FlowerDaffodil Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><FlowerDaffodil data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('FireSmoke Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><FireSmoke data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('FeatherPointed Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><FeatherPointed data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Clover Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Clover data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('CloudSun Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><CloudSun data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Chestnut Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Chestnut data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Cannabis Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Cannabis data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Cactus Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Cactus data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Bugs Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Bugs data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('BenchTree Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><BenchTree data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('BagSeedling Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><BagSeedling data-testid="icon" width={50} height={50}/></button>);
+        expect(getByTestId("icon")).toBeDefined();
+    });
+});
+describe('Acorn Icon', () => {
+    it('should render an svg', async() => {
+        const {getByTestId} = render(<button data-testid={"test-container"}><Acorn data-testid="icon" width={50} height={50}/></button>);
         expect(getByTestId("icon")).toBeDefined();
     });
 });
