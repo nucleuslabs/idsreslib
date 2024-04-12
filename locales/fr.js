@@ -1,3 +1,8 @@
+const groups = {
+  Animal: 'Animale',
+  Nature: 'Nature',
+};
+
 const colors = {
   Blue: 'Bleu',
   White: 'Blanc',
@@ -150,4 +155,4 @@ const icons = {
   Worm: 'Gusano',
 };
 
-export default { colors, icons };
+export default { colors, icons, groups };
