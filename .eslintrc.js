@@ -19,6 +19,7 @@ module.exports = {
   ],
   rules: {
     'react/jsx-props-no-spreading': 'off', // disabled because it doesn't work with createComponent
+    'linebreak-style': 'off',
   },
   ignorePatterns: [
     '*.test.js',

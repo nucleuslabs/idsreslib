@@ -29,7 +29,7 @@ export function localizedGroups(lang) {
     value.map((iconKey) => [
       iconKey,
       icons[iconKey],
-      (languages[lang].icons[iconKey] || languages.en.icons[iconKey])
+      (languages[lang].icons[iconKey] || languages.en.icons[iconKey]),
     ]),
     trans,
   ]);
