@@ -4,7 +4,7 @@ This is a React friendly collection of SVG icons for use in the Smrt1 Health IDS
 
 ## Dependencies
 
-This package has a peer dependency of `react` and `react-dom` version 16.
+This package has a peer dependency of `react` and `react-dom` version 18.
 
 ## Install
 
