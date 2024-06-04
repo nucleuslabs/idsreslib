@@ -2,9 +2,6 @@ import * as icons from './icons';
 import colors from './colors';
 import groups from './groups';
 import * as languages from '../locales';
-// import * as en from '../locales/en';
-//
-// const languages = require.context('../locales', true, /\.\/.*\.js$/);
 
 function localized(obj, type, lang = 'en') {
   const translation = languages[lang][type] || languages.en[type];
